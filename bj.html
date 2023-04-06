@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="ja">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width">
+        <title>Black Jack</title>
+        <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css">
+        <link href="https://fonts.googleapis.com/css?family=Philosopher" rel="stylesheet">
+        <link href="bj.css" rel="stylesheet">
+        
+    </head>
+
+    <body>
+        <header>
+            <p>Black Jack </p>
+        </header>
+
+        <div clas="dealer">
+            <h2>DEALER <span id="dealer-sum"></span></h2>
+            <div class="flex">
+               <img id="hidden" src="back.png">
+               <div id="dealer-card"></div>
+            </div>
+        </div>
+      
+
+        <br>
+        <section id="modalArea" class="modalArea">
+            <div id="modalBg" class="modalBg"></div>
+            <div class="modalWrapper">
+              <div class="modalContents">
+                <p id="mess"></p>
+                <input id="restart" type="button" value="RESTART">
+              </div>
+            </div>
+          </section>
+        <br>
+
+        <div class="player">
+            <div id="player-card"></div>
+            <h2>PLAYER <span id= "player-sum" ></span></h2>
+            
+        </div>
+
+        <footer>
+            
+            <input id="hit" type="button" value="HIT" >
+            <input id="stand" type="button" value="STAND">
+            <div id="result"></div>
+        </footer>
+
+      <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+      <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+      <script src="bj.js"></script>
+
+     
+    </body>
+
